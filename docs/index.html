@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compubase: take the controls of your PC</title>
+  <meta name="description" content="Compubase is a free Windows app with 21 instruments Windows forgot: Spotify hotkeys, a Game Mode that drops to about 10 MB, live wallpapers, a magnifying dock and more.">
+  <meta name="theme-color" content="#0b0c0e">
+  <meta property="og:title" content="Compubase: take the controls of your PC">
+  <meta property="og:description" content="Spotify hotkeys, an ultra-light Game Mode, live wallpapers and 18 more tools for Windows 10 and 11. Free.">
+  <meta property="og:image" content="assets/home.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&family=B612+Mono:wght@400;700&family=Big+Shoulders+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-win" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5.4 10.2 4.4v7.1H3zM11.2 4.3 21 3v8.5h-9.8zM3 12.5h7.2v7.1L3 18.6zM11.2 12.5H21V21l-9.8-1.3z"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M5 12h14"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+  </defs>
+</svg>
+
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="#top" aria-label="Compubase home"><img src="assets/logo.svg" alt="" width="30" height="30"><span>Compubase</span></a>
+    <nav class="nav" id="nav">
+      <a href="#instruments">Instruments</a>
+      <a href="#display">Screens</a>
+      <a href="#checklist">Install</a>
+      <a href="#arcade">Arcade</a>
+      <a href="#faq">Handbook</a>
+    </nav>
+    <a class="placard small" data-download href="#checklist"><svg class="ic"><use href="#i-down"/></svg>Download</a>
+    <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ PANEL (first viewport) ============ -->
+  <section class="panel" aria-label="Compubase instrument panel">
+    <div class="screw s-tl"></div><div class="screw s-tr"></div><div class="screw s-bl"></div><div class="screw s-br"></div>
+    <div class="panel-in">
+      <div class="pitch">
+        <h1>Take the<br>controls.</h1>
+        <p class="lede">Compubase adds 21 instruments Windows forgot: Spotify hotkeys, a Game Mode, live wallpapers,
+          a magnifying dock and more. Switch on what you need. It nearly vanishes while you play.</p>
+        <div class="actions">
+          <a class="placard lit" data-download href="#checklist"><svg class="ic"><use href="#i-win"/></svg><span class="legend"><b>Download</b><small>For Windows 10 &amp; 11</small></span></a>
+          <a class="textlink" href="#arcade">Play Flappy Compu<svg class="ic"><use href="#i-chev"/></svg></a>
+        </div>
+        <p class="fine-print">Free · no ads · no account</p>
+      </div>
+
+      <div class="six" id="six">
+        <figure class="gauge" data-gauge="memory"><div class="bezel"><svg viewBox="0 0 200 200"></svg></div><figcaption>Memory</figcaption></figure>
+        <figure class="gauge" data-gauge="horizon"><div class="bezel"><svg viewBox="0 0 200 200"></svg></div><figcaption>Game Mode</figcaption></figure>
+        <figure class="gauge" data-gauge="clock"><div class="bezel"><svg viewBox="0 0 200 200"></svg></div><figcaption>Local time</figcaption></figure>
+        <figure class="gauge" data-gauge="volume"><div class="bezel"><svg viewBox="0 0 200 200"></svg></div>
+          <figcaption>Spotify vol
+            <span class="keys"><button type="button" data-vol="-1" aria-label="Spotify volume down (Ctrl+Alt+Down)"><svg class="ic" style="width:14px;height:14px"><use href="#i-minus"/></svg></button><button type="button" data-vol="1" aria-label="Spotify volume up (Ctrl+Alt+Up)"><svg class="ic" style="width:14px;height:14px"><use href="#i-plus"/></svg></button></span>
+          </figcaption></figure>
+        <figure class="gauge" data-gauge="heading"><div class="bezel"><svg viewBox="0 0 200 200"></svg></div><figcaption>Heading</figcaption></figure>
+        <figure class="gauge" data-gauge="modules"><div class="bezel"><svg viewBox="0 0 200 200"></svg></div><figcaption>Modules on</figcaption></figure>
+      </div>
+
+      <aside class="annun" aria-label="Status lamps">
+        <span class="lamp" data-lamp="game">Game<br>mode</span>
+        <span class="lamp on green" data-lamp="wall">Wall-<br>paper</span>
+        <span class="lamp on green" data-lamp="widgets">Widgets</span>
+        <span class="lamp on green" data-lamp="hotkeys">Hotkeys</span>
+        <span class="lamp on dim" data-lamp="browser">Browser<br>asleep</span>
+      </aside>
+
+      <div class="switch-row">
+        <button class="guard" id="gm" type="button" role="switch" aria-checked="false">
+          <span class="guard-cover" aria-hidden="true"></span>
+          <span class="toggle" aria-hidden="true"><span class="lever"></span></span>
+          <span class="guard-label"><b>Game Mode</b><span id="gm-state">Off · flip to try it</span></span>
+        </button>
+        <div class="readout" aria-live="polite"><span class="ro-k">Compubase</span><span class="ro-v" id="ro-mem">60 MB</span><span class="ro-k">while you game</span><span class="ro-v dim" id="ro-game">≈10 MB</span></div>
+      </div>
+
+      <ul class="facts">
+        <li><b>Hotkeys</b>Work everywhere, even in fullscreen games.</li>
+        <li><b>Browser</b>Unloads itself while you're not using it.</li>
+        <li><b>Modules</b>21 of them. The ones you leave off never run.</li>
+      </ul>
+      <p class="measure-note">Memory readings measured on the maker's PC in Task Manager. Yours will vary.</p>
+    </div>
+  </section>
+
+  <!-- ============ INSTRUMENT LIST ============ -->
+  <section class="sec tight" id="instruments">
+    <div class="wrap">
+      <div class="region">
+        <header class="split-head">
+          <h2>The instrument list</h2>
+          <p>Every module in Compubase. Flip the levers to build your panel: the Modules gauge up top counts along.
+            In the app you do the same on the Modules page.</p>
+        </header>
+        <div class="breakers" id="breakers"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MFD SCREENSHOTS ============ -->
+  <section class="sec dark loose" id="display">
+    <div class="wrap mfd-wrap">
+      <header class="sec-head">
+        <h2>See the real screens</h2>
+        <p>These are Compubase itself, not mock-ups. Press a key on the display to switch pages.</p>
+      </header>
+      <div class="mfd">
+        <div class="softkeys left">
+          <button type="button" class="sk on" data-shot="home">Home</button>
+          <button type="button" class="sk" data-shot="gamemode">Game</button>
+          <button type="button" class="sk" data-shot="spotify">Music</button>
+          <button type="button" class="sk" data-shot="wallpaper">Wall</button>
+        </div>
+        <div class="mfd-screen">
+          <img id="mfd-img" src="assets/home.png" width="1280" height="800" alt="Compubase Home: clock, quick switches and your modules">
+          <p class="mfd-cap" id="mfd-cap">Home · your quick switches and every module at a glance</p>
+        </div>
+        <div class="softkeys right">
+          <button type="button" class="sk" data-shot="search">Search</button>
+          <button type="button" class="sk" data-shot="modules">Modules</button>
+          <button type="button" class="sk" data-shot="settings">Theme</button>
+          <span class="sk blank" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIGHTING (theme picker) ============ -->
+  <section class="sec" id="lighting">
+    <div class="wrap">
+     <div class="region lighting">
+      <div>
+        <h2>Panel lighting</h2>
+        <p>Compubase comes in eight colour themes, plus any two colours you like. Turn the knob: this whole page
+          relights in the theme you pick, just like the app.</p>
+        <p class="theme-name">Now lit: <b id="theme-name">Compu Violet</b></p>
+      </div>
+      <div class="knob-plate">
+        <ol class="detents" id="detents" aria-hidden="true"></ol>
+        <button class="knob" id="knob" type="button" role="slider" aria-label="Panel lighting theme" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0" aria-valuetext="Compu Violet"><span class="knob-mark"></span></button>
+        <p class="knob-hint">Click, drag or use the arrow keys</p>
+      </div>
+     </div>
+    </div>
+  </section>
+
+  <!-- ============ CHECKLIST ============ -->
+  <section class="sec tight" id="checklist">
+    <div class="wrap check-wrap">
+     <div class="region">
+      <header class="split-head">
+        <h2>Before-install checklist</h2>
+        <p>About a minute, start to finish. Tick them off as you go.</p>
+      </header>
+      <div class="checkcard">
+        <ol class="checklist">
+          <li><label><input type="checkbox"><span class="box"><svg class="ic"><use href="#i-check"/></svg></span><span class="item">Download setup</span><span class="lead"></span><span class="act"><a data-download href="#">Compubase-Setup.exe</a></span></label></li>
+          <li><label><input type="checkbox"><span class="box"><svg class="ic"><use href="#i-check"/></svg></span><span class="item">Open the file</span><span class="lead"></span><span class="act">Click Install</span></label></li>
+          <li><label><input type="checkbox"><span class="box"><svg class="ic"><use href="#i-check"/></svg></span><span class="item">“Windows protected your PC”</span><span class="lead"></span><span class="act">More info → Run anyway</span></label></li>
+          <li><label><input type="checkbox"><span class="box"><svg class="ic"><use href="#i-check"/></svg></span><span class="item">Welcome tour</span><span class="lead"></span><span class="act">Pick what you want</span></label></li>
+          <li><label><input type="checkbox"><span class="box"><svg class="ic"><use href="#i-check"/></svg></span><span class="item">Find it later</span><span class="lead"></span><span class="act">Start menu · Ctrl+K inside</span></label></li>
+        </ol>
+        <div class="check-foot">
+          <a class="placard lit big" data-download href="#"><svg class="ic"><use href="#i-down"/></svg><span class="legend"><b>Download Compubase</b><small>Compubase-Setup.exe · about 160 MB</small></span></a>
+          <p>Windows 10 or 11, 64-bit. Everything is included, no Python needed.
+            Had NexusHub? Compubase is its new name: your settings move over by themselves.</p>
+          <p id="thanks" class="thanks" hidden>Downloading. Open <b>Compubase-Setup.exe</b> when it finishes.</p>
+        </div>
+      </div>
+     </div>
+    </div>
+  </section>
+
+  <!-- ============ ARCADE ============ -->
+  <section class="sec dark" id="arcade">
+    <div class="wrap arcade">
+      <div class="nav-display">
+        <canvas id="flappy" tabindex="0" aria-label="Flappy Compu. Click, tap or press Space to flap."></canvas>
+        <p class="nd-foot">Click, tap or <kbd>Space</kbd> to flap</p>
+      </div>
+      <div class="log">
+        <h2>Flappy Compu</h2>
+        <p>A tiny game built into Compubase. You can even play it on your desktop wallpaper. Warm up here; scores
+          you set in the app go on the global board.</p>
+        <div class="log-head"><span>Flight log</span><span id="board-state" class="state">Loading</span></div>
+        <ol id="board"></ol>
+        <div class="best"><span>Your best on this device</span><b id="web-best">0</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HANDBOOK (FAQ) ============ -->
+  <section class="sec tight" id="faq">
+    <div class="wrap">
+     <div class="region">
+      <header class="split-head qrh-head"><h2>Quick reference handbook</h2><p>The questions people ask before they install.</p></header>
+      <div class="qrh">
+        <details><summary>Is it really free?</summary><p>Yes. No ads, no in-app purchases, no “pro” version.</p></details>
+        <details><summary>Will it slow down my games?</summary><p>No. Game Mode boosts your game and Compubase itself goes ultra-light while you play: wallpaper, widgets and animations pause and it hands its memory back to Windows. Hotkeys keep working.</p></details>
+        <details><summary>What does Windows' blue warning mean?</summary><p>“Windows protected your PC” appears for new apps that few people have downloaded yet. Click <b>More info</b>, then <b>Run anyway</b>.</p></details>
+        <details><summary>Will it break my taskbar?</summary><p>No. The Compu Dock only hides the Windows taskbar. Switching the dock off, quitting, uninstalling, or even a crash brings the normal taskbar straight back.</p></details>
+        <details><summary>I had NexusHub. Now what?</summary><p>NexusHub is now Compubase. Your copy offers the update itself (or install from this page); settings, profiles and scores move over and the old version is removed.</p></details>
+        <details><summary>How do updates work?</summary><p>Compubase checks once a day and shows <b>Update now</b> on Home. It updates and restarts in about a minute, keeping your settings.</p></details>
+        <details><summary>Does it work in fullscreen games?</summary><p>Hotkeys do. The crosshair and stats overlay work in borderless and windowed modes. Check your game's rules before using overlays in ranked matches.</p></details>
+        <details><summary>How do I uninstall it?</summary><p>Windows <b>Settings → Apps → Installed apps → Compubase → Uninstall</b>. You can choose to delete your settings too.</p></details>
+        <details><summary>What does the leaderboard share?</summary><p>Only the nickname you choose and your best score, and you can switch it off. Games on this website stay on your device.</p></details>
+        <details><summary>Where are my settings stored?</summary><p>On your PC, in your user folder. Signing in with Google is optional and only backs up your profiles to a private folder in your own Drive.</p></details>
+      </div>
+     </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <a class="brand" href="#top"><img src="assets/logo.svg" alt="" width="28" height="28"><span>Compubase</span></a>
+      <p class="credit">Made by David Romany</p>
+      <p class="tiny">Not affiliated with Microsoft. Windows is a trademark of Microsoft Corporation.</p>
+    </div>
+    <nav class="foot-nav">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:dovajova36@gmail.com">Contact</a>
+      <a data-download href="#checklist">Download</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/flappy.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
