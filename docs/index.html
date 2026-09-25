@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compubase: Windows, but yours</title>
+  <meta name="description" content="Compubase is a free Windows app that adds what Windows is missing: Spotify hotkeys, a Game Mode that nearly disappears while you play, live wallpapers, a magnifying dock and 20 more tools.">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta property="og:title" content="Compubase: Windows, but yours">
+  <meta property="og:description" content="Spotify hotkeys, an ultra-light Game Mode, live wallpapers, a new dock and 20 more tools for Windows. Free.">
+  <meta property="og:image" content="assets/home.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/logo.svg" alt="">Compubase</a>
+    <nav class="links">
+      <a href="#features">Features</a>
+      <a href="#arcade">Arcade</a>
+      <a href="#get">Install</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn primary small" data-download href="#get">Download</a>
+    </nav>
+    <button id="menu-toggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="badge">Formerly NexusHub <b>v1.2 · free</b></span>
+      <h1>Windows, <span class="hl">but&nbsp;yours.</span></h1>
+      <p class="lead">Compubase adds the things Windows forgot: hotkeys for Spotify, a Game Mode that nearly vanishes
+        while you play, live wallpapers, a magnifying dock and 20 more handy tools. One light app.</p>
+      <div class="cta">
+        <a class="btn primary big" data-download href="#get">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5 10 4.5v7H3zM11 4.4 21 3v8.5H11zM3 12.5h7v7l-7-1zM11 12.5h10V21l-10-1.4z"/></svg>
+          Download for Windows</a>
+        <a class="btn big" href="#arcade">Play the mini-game ↓</a>
+      </div>
+      <div class="meta"><span>Windows 10 &amp; 11</span><span>No ads, no account</span><span>Installs in a minute</span></div>
+
+      <div class="stage reveal">
+        <div class="screen"><img src="assets/home.png" alt="The Compubase home screen" width="1280" height="800"></div>
+        <div class="sticker s1">🎮 Game Mode ON<small>Compubase drops to ~10 MB</small></div>
+        <div class="sticker s2">⌨️ Ctrl + Alt + →<small>next song, even in-game</small></div>
+        <div class="sticker s3">🔎 Ctrl + K<small>find any setting</small></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Spotify Hotkeys</span><span>Game Mode</span><span>Live Wallpapers</span><span>Compu Dock</span><span>Flappy Compu</span>
+      <span>Soundboard</span><span>Crosshair</span><span>Clipboard History</span><span>Night Filter</span><span>Desktop Widgets</span>
+      <span>Built-in Browser</span><span>Speed Test</span><span>Focus Timer</span><span>Color Picker</span>
+      <span>Spotify Hotkeys</span><span>Game Mode</span><span>Live Wallpapers</span><span>Compu Dock</span><span>Flappy Compu</span>
+      <span>Soundboard</span><span>Crosshair</span><span>Clipboard History</span><span>Night Filter</span><span>Desktop Widgets</span>
+      <span>Built-in Browser</span><span>Speed Test</span><span>Focus Timer</span><span>Color Picker</span>
+    </div>
+  </div>
+
+  <!-- ===================== BENTO ===================== -->
+  <section id="features">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="kicker">Everything, one app</span>
+        <h2>21 little superpowers.<br>Switch on the ones you want.</h2>
+        <p>Only what you turn on runs. The rest uses nothing at all.</p>
+      </div>
+      <div class="bento">
+        <div class="tile dark w4 h2 reveal">
+          <div class="emoji">🎮</div>
+          <h3>A Game Mode that gets out of the way</h3>
+          <p>Launch a game and Compubase boosts it, switches to max performance, turns Spotify down, then goes ultra-light
+            itself: its wallpaper, widgets and animations pause and it shrinks to about 10&nbsp;MB. Hotkeys keep working.</p>
+          <div class="shot"><img src="assets/gamemode.png" alt="Game Mode" loading="lazy"></div>
+        </div>
+        <div class="tile grad w2 reveal">
+          <div class="emoji">🎵</div>
+          <h3>Spotify, one key away</h3>
+          <p>Play, skip and change Spotify's own volume without leaving your game.</p>
+          <div class="keys"><span class="kbd">Ctrl</span><span class="kbd">Alt</span><span class="kbd">→</span></div>
+        </div>
+        <div class="tile tint w2 reveal">
+          <div class="big-num"><span data-count="10">0</span><small>MB</small></div>
+          <p style="margin-top:10px"><b>while you game.</b> Measured on our test PC, as Task Manager shows it.</p>
+        </div>
+        <div class="tile w3 reveal">
+          <div class="emoji">🌌</div>
+          <h3>Wallpapers that move</h3>
+          <p>Live scenes, your own videos and GIFs, or free HD ones you download inside the app. Blurry? Enhance them with AI.</p>
+          <div class="shot"><img src="assets/wallpaper.png" alt="Live wallpapers" loading="lazy"></div>
+        </div>
+        <div class="tile tint2 w3 reveal">
+          <div class="emoji">🔎</div>
+          <h3>Find anything with Ctrl + K</h3>
+          <p>Every module, setting and hotkey. Type a word and land right on it, highlighted.</p>
+          <div class="shot"><img src="assets/search.png" alt="Search" loading="lazy"></div>
+        </div>
+        <div class="tile w2 reveal"><div class="emoji">🧲</div><h3>Compu Dock</h3><p>A magnifying dock and Launchpad that can replace the taskbar. Switch back any time.</p></div>
+        <div class="tile w2 reveal"><div class="emoji">🎙️</div><h3>One-key mic mute</h3><p>Plus per-app volume and a soundboard that can play into Discord.</p></div>
+        <div class="tile w2 reveal"><div class="emoji">🎯</div><h3>Crosshair &amp; stats</h3><p>A custom crosshair and an FPS-style stats box on top of your games.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STORIES ===================== -->
+  <section style="padding-top:20px">
+    <div class="wrap">
+      <div class="split reveal">
+        <div>
+          <span class="kicker">Music</span>
+          <h3>Your music without the alt-tab.</h3>
+          <p>Save your favourite albums and playlists to their own hotkeys, and they start on shuffle. Change
+            <em>Spotify's</em> volume so your game and friends stay the same.</p>
+          <ul class="list">
+            <li>Play / pause, skip, like, shuffle, jump 15 seconds</li>
+            <li>A song pop-up when the track changes</li>
+            <li>Works in fullscreen games</li>
+          </ul>
+        </div>
+        <div class="frame"><img src="assets/spotify.png" alt="Spotify hotkeys" loading="lazy"></div>
+      </div>
+      <div class="split flip reveal">
+        <div>
+          <span class="kicker">Made for you</span>
+          <h3>Easy from the first minute.</h3>
+          <p>A short welcome tour switches on only what you care about. Everything else is one click away on the
+            Modules page, and every module has a Reset button, so experimenting is safe.</p>
+          <ul class="list">
+            <li>Pin favourite modules to the top of the sidebar</li>
+            <li>Choose your own Home switches</li>
+            <li>Updates itself with one click, keeping your settings</li>
+          </ul>
+        </div>
+        <div class="frame"><img src="assets/modules.png" alt="The Modules page" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== THEMES ===================== -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="themes reveal">
+        <div>
+          <span class="kicker" style="color:#9ea0b3">Make it yours</span>
+          <h2>Pick a colour. This page changes too.</h2>
+          <p>You're looking at <b id="theme-name" style="color:#fff">Compu Violet</b>. Compubase has eight themes, or any two
+            colours you like.</p>
+          <div id="swatches"></div>
+          <div class="chips">
+            <span>5 backgrounds incl. OLED black</span><span>Text size</span><span>Spacing</span><span>Round or square corners</span>
+            <span>Icons-only sidebar</span><span>Your own app name</span><span>Dock size &amp; colour</span>
+          </div>
+        </div>
+        <div class="frame" style="box-shadow:none;border-color:#23242f"><img src="assets/settings.png" alt="Appearance settings" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ARCADE ===================== -->
+  <section id="arcade">
+    <div class="wrap">
+      <div class="head center reveal" style="text-align:center">
+        <span class="kicker">The arcade</span>
+        <h2>Flappy Compu 🐤</h2>
+        <p>A tiny game lives inside Compubase, and you can even play it on your desktop wallpaper. Warm up here, then
+          post a real score from the app.</p>
+      </div>
+      <div class="arcade">
+        <div class="cabinet reveal">
+          <canvas id="flappy" tabindex="0" aria-label="Flappy Compu. Click, tap or press Space to flap."></canvas>
+          <p class="hint">Click, tap or press <span class="kbd">Space</span></p>
+        </div>
+        <div class="board-card reveal">
+          <h3>🏆 Leaderboard <span id="board-state" class="pill">Loading</span></h3>
+          <ol id="board"></ol>
+          <div class="your-best"><span>Your best on this device</span><b id="web-best">0</b></div>
+          <p class="muted">Web scores stay in your browser. Scores you set in the app go on the global board, with the
+            nickname you choose. New birds unlock at 10, 20, 35, 50, 75 and 100 points.</p>
+          <a class="btn primary" data-download href="#get">Get Compubase and compete</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VS ===================== -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="kicker">Before &amp; after</span>
+        <h2>Same Windows. More you.</h2>
+      </div>
+      <div class="vs reveal">
+        <div class="col">
+          <h3>Windows on its own</h3>
+          <ul>
+            <li>Alt-tab out of games to skip a song</li>
+            <li>Tune your PC by hand for every game</li>
+            <li>Static wallpaper</li>
+            <li>Hunt through menus for settings</li>
+            <li>No way to mute your mic everywhere</li>
+          </ul>
+        </div>
+        <div class="col us">
+          <h3><img src="assets/logo.svg" alt="">With Compubase</h3>
+          <ul>
+            <li>One hotkey, even in fullscreen</li>
+            <li>Game Mode switches on by itself</li>
+            <li>Live, music-reactive, even playable wallpapers</li>
+            <li>Ctrl + K finds anything</li>
+            <li>One key mutes your mic in every app</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GET ===================== -->
+  <section id="get" style="padding-top:0">
+    <div class="wrap">
+      <div class="get reveal">
+        <h2>Get Compubase</h2>
+        <p>One small setup file with everything inside. Free, no ads, no account.</p>
+        <a class="btn light primary big" data-download href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5 10 4.5v7H3zM11 4.4 21 3v8.5H11zM3 12.5h7v7l-7-1zM11 12.5h10V21l-10-1.4z"/></svg>
+          Download Compubase Setup</a>
+        <p id="thanks">Thanks! Open <b>Compubase-Setup.exe</b> when the download finishes.</p>
+        <div class="req"><span>Windows 10 or 11 (64-bit)</span><span>About 160 MB</span><span>No Python needed</span></div>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><h3>Download</h3><p>Click the button to get <b>Compubase-Setup.exe</b>.</p></li>
+        <li class="reveal"><h3>Install</h3><p>Open it and click <b>Install</b>. If Windows shows “Windows protected your PC”, click <b>More info</b> → <b>Run anyway</b>.</p></li>
+        <li class="reveal"><h3>Make it yours</h3><p>A quick tour switches on what you like. Later, find Compubase in the <b>Start menu</b>.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal"><span class="kicker">FAQ</span><h2>Good questions.</h2></div>
+      <div class="faq">
+        <details><summary>Is Compubase really free?</summary><p>Yes. No ads, no in-app purchases, no “pro” version.</p></details>
+        <details><summary>I had NexusHub. What happens?</summary><p>NexusHub is now called Compubase. Your copy offers the update by itself (or install from this page); your settings, profiles and scores move over automatically, and the old version is removed.</p></details>
+        <details><summary>What do I need?</summary><p>Just Windows 10 or 11. The setup includes everything Compubase needs, so there's no Python or anything else to install.</p></details>
+        <details><summary>Windows says “Windows protected your PC”.</summary><p>Windows shows this for new apps that aren't downloaded by many people yet. Click <b>More info</b>, then <b>Run anyway</b>.</p></details>
+        <details><summary>Will it slow down my games?</summary><p>No. Game Mode boosts your game, and Compubase itself goes ultra-light while you play, giving its memory back to Windows (about 10 MB). Hotkeys keep working.</p></details>
+        <details><summary>Will it break my taskbar?</summary><p>No. The Compu Dock only hides the Windows taskbar. Switching it off, quitting, uninstalling, or even a crash brings the normal taskbar straight back.</p></details>
+        <details><summary>How do updates work?</summary><p>Compubase checks for a new version once a day and shows an <b>Update now</b> button on Home. It updates and restarts in about a minute.</p></details>
+        <details><summary>How do I uninstall it?</summary><p>Windows <b>Settings → Apps → Installed apps → Compubase → Uninstall</b>. You can choose to delete your settings too.</p></details>
+        <details><summary>Does it work in games?</summary><p>Yes. Hotkeys work in fullscreen games; the crosshair and stats overlay work in borderless and windowed modes. Check your game's rules before using overlays in ranked matches.</p></details>
+        <details><summary>What does the leaderboard share?</summary><p>Only the nickname you pick and your best score, and you can switch it off. Games played on this website stay on your device.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top"><img src="assets/logo.svg" alt="">Compubase</a>
+      <div class="credit">Made by <b>David Romany</b></div>
+      <span class="fine">Not affiliated with Microsoft. Windows is a trademark of Microsoft Corporation.</span>
+    </div>
+    <nav>
+      <a href="#arcade">Arcade</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="mailto:dovajova36@gmail.com">Contact</a>
+    </nav>
+    <div class="big-word" aria-hidden="true">Compubase</div>
+    <div class="bottom-line">© <span id="year">2026</span> Compubase · Free for Windows 10 and 11</div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/flappy.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
